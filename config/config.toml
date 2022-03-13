@@ -9,10 +9,10 @@
     UserName = "白皑"
     UserDesc = "长得非常帅的程序员"
 [system]
-    CdnURL = "https://r7jaesn7w.hn-bkt.clouddn.com"
-    QiniuAccessKey = "BFqcUZldi0ZKl_H3ScXLf6w5qL75tLYQuNK5Uaz1"
-    QiniuSecretKey = "dr5JI9m9SoMbdL28j4yVO7jF7x3g_JOmX8f9mhP6"
+    CdnURL = "自己的域名"
+    QiniuAccessKey = "七牛云对象存储，自行申请"
+    QiniuSecretKey = "替换自己的"
     Valine = true
-    ValineAppid = "o9XXPb5cKeAy30XmMFXApu5w-gzGzoHsz"
-    ValineAppkey = "D5Cito0RkfSrBMzdGiVHqX3Q"
-    ValineServerURL = "https://o9xxpb5c.lc-cn-n1-shared.com"
+    ValineAppid = "百度 valine"
+    ValineAppkey = "替换自己的"
+    ValineServerURL = "替换自己的"
