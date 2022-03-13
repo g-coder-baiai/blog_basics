@@ -37,7 +37,7 @@ function initEditor() {
 function uploadImage(file, cb) {
   const config = {
     useCdnDomain: true,
-    region: qiniu.region.z1
+    region: qiniu.region.z2
   };
   const putExtra = {
   };

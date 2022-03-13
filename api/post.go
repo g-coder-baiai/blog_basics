@@ -48,8 +48,10 @@ func (*Api) SaveAndUpdatePost(w http.ResponseWriter,r *http.Request)  {
 		content := params["content"].(string)
 		markdown := params["markdown"].(string)
 		slug := params["slug"].(string)
+
 		title := params["title"].(string)
 		postType := params["type"].(float64)
+
 		pType := int(postType)
 		post := &models.Post{
 			-1,
@@ -100,3 +102,11 @@ func (*Api) SaveAndUpdatePost(w http.ResponseWriter,r *http.Request)  {
 
 
 }
+
+func (*Api) SearchPost(w http.ResponseWriter,r *http.Request)  {
+	_ = r.ParseForm()
+	condition := r.Form.Get("val")
+	searchResp := service.SearchPost(condition)
+	common.Success(w,searchResp)
+}
+
